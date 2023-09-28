@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+	.question1 {
+		height: 800px;
+		width: 800px;
+		background: green;
+		margin-left: auto; 
+		margin-right: auto;
+		margin-top: 100px;
+
+	}
+	.question2 {
+		height: 800px;
+		width: 800px;
+		background: green;
+		margin-left: auto; 
+		margin-right: auto;
+		margin-top: 100px;
+	
+	}
+	.question3 {
+		height: 800px;
+		width: 800px;
+		background: green;
+		margin-left: auto; 
+		margin-right: auto;
+		margin-top: 100px;
+	
+	}
+	.foto {
+		width: 100%;
+
+	}
+	.variant {
+		text-align: center;
+		font-size: 25px;
+		font-family: "Comic Sans MS";
+		border:1px solid black;
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.title {
+		text-align: center;
+		font-family: "Comic Sans MS";
+		font-size: 30px;
+	}
+	</style>
+</head>
+<body>
+
+<div class="question1">
+	<img src="ak.jpg" class="foto">
+	<h2 class="title">какой это калаш?</h2>
+	<p class="question1_varian1 variant">AK-47 | Asiimov</p>
+	<p class="variant question1_varian2">AK-47 | Panthera onca</p>
+	<p class="variant question1_varian3">AK-47 | Neon R</p>
+</div>
+<div class="question2" style="display: none;">
+	<img src="woi.jpg" class="foto">
+	<h2 class="title">какая это мка?</h2>
+	<p class="variant question2_varian1">M4A4 | Temukau</p>
+	<p class="variant question2_varian2">M4A4 | Eye of Horus</p>
+	<p class="question2_varian3 variant">M4A4 | howl</p>
+
+</div>
+<div class="question3" style="display: none;" >
+	<img src="flame2.webp" class="foto">
+	<h2 class="title">какой это дигл?</h2>
+	<p class="question3_varian1 variant">Desert Eagle | Blaze</p>
+	<p class="variant question3_varian2">Desert Eagle | Ocean Drive</p>
+	<p class="variant question3_varian3">Desert Eagle | Printstream</p>
+</div>
+<img src="you.jpg" class="win foto" style="display:none">
+</body>
+</html>
+<script type="text/javascript">
+	document.querySelector(".question1_varian1").onclick = function() {
+		document.querySelector(".question2").style.display = "block"
+		document.querySelector(".question1").style.display = "none"
+	}
+	document.querySelector(".question2_varian3").onclick = function() {
+		document.querySelector(".question3").style.display = "block"
+		document.querySelector(".question2").style.display = "none"
+	}
+	document.querySelector(".question3_varian1").onclick = function() {
+		document.querySelector(".question3").style.display = "none"
+		document.querySelector(".win").style.display = "block"
+	}
+	document.querySelector(".question3_varian2").onclick = function() {
+		alert("не угадал")
+	}
+	document.querySelector(".question3_varian3").onclick = function() {
+		alert("не угадал")
+	}	
+	document.querySelector(".question2_varian1").onclick = function() {
+		alert("не угадал")
+	}
+	document.querySelector(".question2_varian2").onclick = function() {
+		alert("не угадал")
+	}
+	document.querySelector(".question1_varian2").onclick = function() {
+		alert("не угадал")
+	}
+	document.querySelector(".question1_varian3").onclick = function() {
+		alert("не угадал")
+	}
+
+</script>
